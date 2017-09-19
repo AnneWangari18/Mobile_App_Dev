@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="@dimen/relativeLayout_paddingBottom"
+    android:paddingLeft="@dimen/relativeLayout_paddingLeft"
+    android:paddingRight="@dimen/relativeLayout_paddingRight"
+    android:paddingTop="@dimen/relativeLayout_paddingTop">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/layout_width_ImageView_SignUp"
+        android:layout_height="@dimen/layout_height_ImageView_SignUp"
+        android:layout_above="@+id/editText_FName"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/layout_marginBottom_ImageView"
+        android:src="@drawable/fingerprint" />
+
+    <EditText
+        android:id="@+id/editText_FName"
+        style="@style/editText_style"
+        android:layout_above="@+id/editText_LName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/layout_marginBottom_Fname"
+        android:hint="@string/txt_firstname_hint"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_LName"
+        style="@style/editText_style"
+        android:layout_above="@+id/editText_Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/layout_marginBottom_Lname"
+        android:hint="@string/txt_lastname_hint"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_Email"
+        style="@style/editText_style"
+        android:layout_above="@+id/editText_Phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/layout_marginBottom_Email"
+        android:hint="@string/txt_emailaddress_hint"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText_Phone"
+        style="@style/editText_style"
+        android:layout_above="@+id/editText_Password"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/txt_phone_hint"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editText_Password"
+        style="@style/editText_style"
+        android:layout_above="@+id/button_Create"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/layout_marginBottom_Password"
+        android:hint="@string/txt_password_hint"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_Create"
+        style="@style/button_style"
+        android:text="Create Account"
+        android:layout_marginBottom="@dimen/layout_marginBottom_Button_Create"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

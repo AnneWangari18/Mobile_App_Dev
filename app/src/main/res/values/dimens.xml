@@ -3,4 +3,32 @@
     <dimen name="activity_horizontal_margin">48dp</dimen>
     <dimen name="activity_vertical_margin">70dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="layout_width">210dp</dimen>
+    <dimen name="layout_height">37dp</dimen>
+    <dimen name="layout_marginTop_FirstName">76dp</dimen>
+    <dimen name="layout_marginTop_LastName">36dp</dimen>
+    <dimen name="layout_marginTop_Email">33dp</dimen>
+    <dimen name="layout_marginTop_Phone">29dp</dimen>
+    <dimen name="layout_marginTop_Password">36dp</dimen>
+    <dimen name="layout_width_ImageView">162dp</dimen>
+    <dimen name="layout_height_ImageView">97dp</dimen>
+    <dimen name="layout_height_account_enquiry">30dp</dimen>
+    <dimen name="relativeLayout_paddingTop">70dp</dimen>
+    <dimen name="relativeLayout_paddingBottom">70dp</dimen>
+    <dimen name="relativeLayout_paddingRight">64dp</dimen>
+    <dimen name="relativeLayout_paddingLeft">64dp</dimen>
+    <dimen name="txt_size_account_details">15sp</dimen>
+    <dimen name="layout_margin_bottom_setTextView_FirstName">41dp</dimen>
+    <dimen name="layout_margin_top_setTextView">13dp</dimen>
+    <dimen name="layout_margin_top_setTextView_Phone">10dp</dimen>
+    <dimen name="layout_margin_top_setTextView_Password">14dp</dimen>
+    <dimen name="layout_width_ImageView_SignUp">300dp</dimen>
+    <dimen name="layout_height_ImageView_SignUp">200dp</dimen>
+    <dimen name="layout_marginBottom_ImageView">10dp</dimen>
+    <dimen name="layout_marginBottom_Fname">10dp</dimen>
+    <dimen name="layout_marginBottom_Lname">6dp</dimen>
+    <dimen name="layout_marginBottom_Email">34dp</dimen>
+    <dimen name="layout_marginBottom_Button_Create">14dp</dimen>
+    <dimen name="layout_marginBottom_Password">36dp</dimen>
+
 </resources>

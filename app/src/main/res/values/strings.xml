@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">DV</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="txt_firstname_hint">First Name</string>
+    <string name="txt_lastname_hint">Last Name</string>
+    <string name="txt_emailaddress_hint">Email address</string>
+    <string name="txt_phone_hint">Phone</string>
+    <string name="txt_password_hint">Password</string>
+    <string name="txt_fingerprint">fingerprint</string>
+    <string name="txt_login">Log in</string>
+    <string name="txt_account_enquiry">Don\'t have an account?</string>
+    <string name="txt_signup">Sign Up</string>
+    <string name="txt_account_details">Account Details!!</string>
+    <string name="txt_createAccount">Create Account</string>
 </resources>

@@ -1,34 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.myfirstapplication.annewangari18.dv.HomeActivity">
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="@dimen/relativeLayout_paddingBottom"
+    android:paddingLeft="@dimen/relativeLayout_paddingLeft"
+    android:paddingRight="@dimen/relativeLayout_paddingRight"
+    android:paddingTop="@dimen/relativeLayout_paddingTop">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <TextView
+        android:id="@+id/textView_Set_FirstName"
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="@dimen/layout_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/layout_marginTop_FirstName"
+        android:text="@string/txt_firstname_hint"
+        android:background="@drawable/edittext_background"
+        android:gravity="center"/>
 
-    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:id="@+id/textView_Set_LastName"
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="@dimen/layout_height"
+        android:layout_alignEnd="@+id/textView_Set_Password"
+        android:layout_alignRight="@+id/textView_Set_Password"
+        android:layout_below="@+id/textView_Set_FirstName"
+        android:layout_marginTop="@dimen/layout_marginTop_LastName"
+        android:background="@drawable/edittext_background"
+        android:gravity="center"
+        android:text="@string/txt_lastname_hint" />
 
-    <include layout="@layout/content_home" />
+    <TextView
+        android:id="@+id/textView_Set_Email"
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="@dimen/layout_height"
+        android:layout_below="@+id/textView_Set_LastName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/layout_marginTop_Email"
+        android:background="@drawable/edittext_background"
+        android:gravity="center"
+        android:text="@string/txt_emailaddress_hint" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+    <TextView
+        android:id="@+id/textView_Set_Phone"
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="@dimen/layout_height"
+        android:layout_below="@+id/textView_Set_Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/layout_marginTop_Phone"
+        android:background="@drawable/edittext_background"
+        android:gravity="center"
+        android:text="@string/txt_phone_hint" />
+
+    <TextView
+        android:id="@+id/textView_Set_Password"
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="@dimen/layout_height"
+        android:layout_below="@+id/textView_Set_Phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/layout_marginTop_Password"
+        android:background="@drawable/edittext_background"
+        android:gravity="center"
+        android:text="@string/txt_password_hint" />
+
+    <TextView
+        android:id="@+id/textView_FirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
+        android:layout_above="@+id/textView_Set_LastName"
+        android:layout_alignEnd="@+id/textView_Set_FirstName"
+        android:layout_alignLeft="@+id/textView_Set_FirstName"
+        android:layout_alignRight="@+id/textView_Set_FirstName"
+        android:layout_alignStart="@+id/textView_Set_FirstName"
+        android:layout_marginBottom="@dimen/layout_margin_bottom_setTextView_FirstName"
+        android:text="@string/txt_firstname_hint"
+        android:textColor="@color/colorMaterialLight"/>
 
-</android.support.design.widget.CoordinatorLayout>
+    <TextView
+        android:id="@+id/textView_LastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_setTextView"
+        android:text="@string/txt_lastname_hint"
+        android:layout_below="@+id/textView_Set_FirstName"
+        android:layout_alignLeft="@+id/textView_Set_LastName"
+        android:layout_alignStart="@+id/textView_Set_LastName"
+        android:layout_alignRight="@+id/textView_Set_LastName"
+        android:layout_alignEnd="@+id/textView_Set_LastName"
+        android:textColor="@color/colorMaterialLight"/>
+
+    <TextView
+        android:id="@+id/textView_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView_Set_Email"
+        android:layout_alignLeft="@+id/textView_Set_Email"
+        android:layout_alignRight="@+id/textView_Set_Email"
+        android:layout_alignStart="@+id/textView_Set_Email"
+        android:layout_below="@+id/textView_Set_LastName"
+        android:layout_marginTop="@dimen/layout_margin_top_setTextView"
+        android:text="@string/txt_emailaddress_hint"
+        android:textColor="@color/colorMaterialLight"/>
+
+    <TextView
+        android:id="@+id/textView_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_phone_hint"
+        android:layout_below="@+id/textView_Set_Email"
+        android:layout_marginTop="@dimen/layout_margin_top_setTextView_Phone"
+        android:layout_alignLeft="@+id/textView_Set_Phone"
+        android:layout_alignStart="@+id/textView_Set_Phone"
+        android:layout_alignRight="@+id/textView_Set_Phone"
+        android:layout_alignEnd="@+id/textView_Set_Phone"
+        android:textColor="@color/colorMaterialLight"/>
+
+    <TextView
+        android:id="@+id/textView_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_setTextView_Password"
+        android:text="@string/txt_password_hint"
+        android:layout_below="@+id/textView_Set_Phone"
+        android:layout_alignLeft="@+id/textView_Set_Password"
+        android:layout_alignStart="@+id/textView_Set_Password"
+        android:layout_alignRight="@+id/textView_Set_Password"
+        android:layout_alignEnd="@+id/textView_Set_Password"
+        android:textColor="@color/colorMaterialLight"/>
+
+    <TextView
+        android:id="@+id/textView_Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txt_account_details"
+        android:textColor="@color/colorLight"
+        android:textSize="@dimen/txt_size_account_details"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:elegantTextHeight="true"/>
+</RelativeLayout>
+
